@@ -1,0 +1,14 @@
+{
+  "name": "aethergrid",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev -- --host 0.0.0.0",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "test:frontend": "npm --prefix frontend run test",
+    "test:backend": "pytest backend/tests",
+    "test:visual": "python scripts/visual_check.py",
+    "test": "npm --prefix frontend run test"
+  }
+}

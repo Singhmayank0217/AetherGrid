@@ -1,0 +1,67 @@
+# ==============================================================================
+# AetherGrid Root .dockerignore
+# ==============================================================================
+
+# Git version control
+.git/
+.gitignore
+.gitattributes
+
+# Environment files and secrets
+.env
+.env.*
+.env*.local
+*.pem
+*.key
+*.crt
+
+# Python caches and virtual environments
+.venv/
+venv/
+*/.venv/
+*/venv/
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+.pytest_cache/
+*/.pytest_cache/
+.mypy_cache/
+*/.mypy_cache/
+.ruff_cache/
+*/.ruff_cache/
+
+# Node.js and Frontend dependencies & build artifacts
+node_modules/
+*/node_modules/
+frontend/dist/
+dist/
+.vite/
+frontend/.vite/
+*.tsbuildinfo
+frontend/*.tsbuildinfo
+
+# Test, lint, and coverage
+coverage/
+.coverage
+htmlcov/
+.eslintcache
+
+# Documentation, test scripts, and visual verification artifacts
+artifacts/
+README.md
+scripts/
+
+# IDE, OS, and editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+logs/
+
+# Vercel / sandbox metadata
+.vercel/
+.snowflake/
+.design-cache/
+.v0-trash/
